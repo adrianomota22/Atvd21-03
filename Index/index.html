@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuário</title>
+   
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+       
+        body {
+            background-color: whitesmoke;
+        }
+        .perfil-header {
+            background-color: #000000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .foto-perfil {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid #000000;
+            margin-bottom: 20px;
+        }
+        .informacoes-usuario {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .tabela-atividades {
+            margin-top: 30px;
+        }
+        .formulario-contato {
+            margin-top: 40px;
+        }
+        .btn-custom {
+            background-color: #007a06;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="perfil-header">
+        <h1>Bem-vindo ao Perfil de Usuário</h1>
+    </div>
+
+    <div class="container mt-5">
+
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="perfil.jpeg" alt="Foto de Perfil" class="foto-perfil">
+            </div>
+            <div class="col-md-8 informacoes-usuario">
+                <h2>Adriano Mota Dos Santos</h2>
+                <p><strong>Email:</strong> adriano222@gmail.com</p>
+                <p><strong>Localização:</strong> São Paulo, Brasil</p>
+                <p><strong>Bio:</strong> Desenvolvedor web.</p>
+            </div>
+        </div>
+
+        <div class="tabela-atividades">
+            <h3>Atividades Recentes</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Data</th>
+                        <th>Atividade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>21/03/2025</td>
+                        <td>Postou a segunda atividade no Github</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>17/03/2025</td>
+                        <td>Postou a primeira atividade no Github</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>17/03/2025</td>
+                        <td>Fez uma contribuição em um repositório</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        
+        <div class="formulario-contato">
+            <h3>Entre em Contato</h3>
+            <form>
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Seu email">
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom">Enviar</button>
+            </form>
+        </div>
+
+    </div>
+
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
